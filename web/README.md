@@ -117,12 +117,6 @@ The app uses a modern color scheme that can be easily customized in `styles.css`
 - **Responsive Design**: Mobile-first approach
 - **Accessibility**: ARIA labels and keyboard navigation
 
-## 🌐 Deployment
-
-### GitHub Pages
-1. Push the `web` folder to a GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Your app will be available at `https://username.github.io/repository-name`
 
 ## 📊 Performance
 
