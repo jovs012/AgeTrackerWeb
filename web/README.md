@@ -124,16 +124,6 @@ The app uses a modern color scheme that can be easily customized in `styles.css`
 2. Enable GitHub Pages in repository settings
 3. Your app will be available at `https://username.github.io/repository-name`
 
-### Netlify
-1. Drag and drop the `web` folder to Netlify
-2. Your app will be deployed automatically
-3. Get a custom domain and HTTPS
-
-### Vercel
-1. Connect your GitHub repository to Vercel
-2. Set the build directory to `web`
-3. Deploy with one click
-
 ## 📊 Performance
 
 - **Lightweight**: Less than 100KB total size
