@@ -1,0 +1,472 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+.header-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.header-icon {
+    font-size: 48px;
+    color: #2196F3;
+    margin-bottom: 8px;
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2196F3;
+    margin-bottom: 8px;
+}
+
+.app-subtitle {
+    font-size: 16px;
+    color: rgba(33, 150, 243, 0.8);
+    font-weight: 400;
+}
+
+/* Screens */
+.screen {
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Welcome Card */
+.welcome-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.welcome-icon {
+    font-size: 40px;
+    color: #2196F3;
+    margin-bottom: 12px;
+}
+
+.welcome-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.welcome-subtitle {
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.7);
+    line-height: 1.5;
+}
+
+/* Input Cards */
+.input-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.input-icon {
+    font-size: 20px;
+    color: #2196F3;
+    margin-right: 12px;
+}
+
+.input-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.date-time-button {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(33, 150, 243, 0.1);
+    border: 2px solid rgba(33, 150, 243, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2196F3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.date-time-button:hover {
+    background: rgba(33, 150, 243, 0.2);
+    border-color: #2196F3;
+}
+
+/* Start Button */
+.start-button {
+    width: 100%;
+    height: 56px;
+    background: #2196F3;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 16px rgba(33, 150, 243, 0.3);
+}
+
+.start-button:hover {
+    background: #1976D2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+/* Reset Button */
+.reset-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.reset-button {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.reset-button:hover {
+    background: #f5f5f5;
+    border-color: #ccc;
+}
+
+/* Age Card */
+.age-card {
+    background: #2196F3;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 32px rgba(33, 150, 243, 0.3);
+    color: white;
+}
+
+.age-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.age-values {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.age-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.age-label {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.age-value {
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* Stats Row */
+.stats-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.stat-card {
+    flex: 1 1 0;
+    min-width: 0;
+    background: #009688;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 16px rgba(0, 150, 136, 0.3);
+}
+
+.stat-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.stat-title {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+}
+
+/* Birth Info Card */
+.birth-info-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.birth-info-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.birth-icon {
+    font-size: 20px;
+    color: #2196F3;
+    margin-right: 8px;
+}
+
+.birth-info-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.birth-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.birth-text:last-child {
+    color: rgba(51, 51, 51, 0.7);
+    margin-bottom: 0;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.close-button:hover {
+    background: #f5f5f5;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.date-input, .time-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.date-input:focus, .time-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+.modal-footer {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.confirm-button, .cancel-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.confirm-button {
+    background: #2196F3;
+    color: white;
+}
+
+.confirm-button:hover {
+    background: #1976D2;
+}
+
+.cancel-button {
+    background: #f5f5f5;
+    color: #666;
+}
+
+.cancel-button:hover {
+    background: #e0e0e0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.screen:not(.hidden) {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    #app {
+        padding: 16px;
+    }
+    
+    .header-card {
+        padding: 20px;
+    }
+    
+    .app-title {
+        font-size: 24px;
+    }
+    
+    /* Comment out or remove the stacking for .stats-row */
+    /* .stats-row { grid-template-columns: 1fr; } */
+    
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+    
+    .header-card, .welcome-card, .input-card, .birth-info-card {
+        background: rgba(255, 255, 255, 0.95);
+    }
+    
+    .reset-button {
+        background: rgba(255, 255, 255, 0.9);
+        color: #333;
+    }
+    
+    .modal-content {
+        background: rgba(255, 255, 255, 0.95);
+    }
+} 

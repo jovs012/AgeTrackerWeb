@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Tracker</title>
+    <meta name="description" content="Track your age in real-time with precision down to the second">
+    <meta name="theme-color" content="#2196F3">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Header Section -->
+        <div class="header-card">
+            <div class="header-content">
+                <i class="material-icons header-icon">schedule</i>
+                <h1 class="app-title">Age Tracker</h1>
+                <p class="app-subtitle">Track your journey through time</p>
+            </div>
+        </div>
+
+        <!-- Input Screen -->
+        <div id="input-screen" class="screen">
+            <div class="welcome-card">
+                <i class="material-icons welcome-icon">cake</i>
+                <h2 class="welcome-title">When were you born?</h2>
+                <p class="welcome-subtitle">Select your birth date and time to start tracking your age</p>
+            </div>
+
+            <div class="input-card">
+                <div class="input-row">
+                    <i class="material-icons input-icon">calendar_today</i>
+                    <span class="input-label">Birth Date</span>
+                </div>
+                <button id="date-button" class="date-time-button">
+                    <span id="selected-date">Select Date</span>
+                </button>
+            </div>
+
+            <div class="input-card">
+                <div class="input-row">
+                    <i class="material-icons input-icon">access_time</i>
+                    <span class="input-label">Birth Time</span>
+                </div>
+                <button id="time-button" class="date-time-button">
+                    <span id="selected-time">Select Time</span>
+                </button>
+            </div>
+
+            <button id="start-button" class="start-button">
+                <i class="material-icons">play_arrow</i>
+                <span>Start Tracking My Age</span>
+            </button>
+        </div>
+
+        <!-- Age Display Screen -->
+        <div id="age-screen" class="screen hidden">
+            <div class="reset-row">
+                <button id="reset-button" class="reset-button">
+                    <i class="material-icons">refresh</i>
+                    <span>Reset</span>
+                </button>
+            </div>
+
+            <div class="age-card">
+                <h2 class="age-title">Your Age</h2>
+                <div class="age-values">
+                    <div class="age-row">
+                        <span class="age-label">Years</span>
+                        <span id="years" class="age-value">0</span>
+                    </div>
+                    <div class="age-row">
+                        <span class="age-label">Months</span>
+                        <span id="months" class="age-value">0</span>
+                    </div>
+                    <div class="age-row">
+                        <span class="age-label">Weeks</span>
+                        <span id="weeks" class="age-value">0</span>
+                    </div>
+                    <div class="age-row">
+                        <span class="age-label">Days</span>
+                        <span id="days" class="age-value">0</span>
+                    </div>
+                    <div class="age-row">
+                        <span class="age-label">Hours</span>
+                        <span id="hours" class="age-value">0</span>
+                    </div>
+                    <div class="age-row">
+                        <span class="age-label">Minutes</span>
+                        <span id="minutes" class="age-value">0</span>
+                    </div>
+                    <div class="age-row">
+                        <span class="age-label">Seconds</span>
+                        <span id="seconds" class="age-value">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-card">
+                    <i class="material-icons stat-icon">today</i>
+                    <span class="stat-title">Total Days</span>
+                    <span id="total-days" class="stat-value">0</span>
+                </div>
+                <div class="stat-card">
+                    <i class="material-icons stat-icon">schedule</i>
+                    <span class="stat-title">Total Hours</span>
+                    <span id="total-hours" class="stat-value">0</span>
+                </div>
+            </div>
+
+            <div class="birth-info-card">
+                <div class="birth-info-header">
+                    <i class="material-icons birth-icon">cake</i>
+                    <span class="birth-info-title">Birth Information</span>
+                </div>
+                <div class="birth-info-content">
+                    <p id="birth-date-text" class="birth-text">Born on [Date]</p>
+                    <p id="birth-time-text" class="birth-text">At [Time]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date Picker Modal -->
+        <div id="date-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select Birth Date</h3>
+                    <button id="close-date-modal" class="close-button">×</button>
+                </div>
+                <div class="modal-body">
+                    <input type="date" id="date-picker" class="date-input">
+                </div>
+                <div class="modal-footer">
+                    <button id="confirm-date" class="confirm-button">OK</button>
+                    <button id="cancel-date" class="cancel-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Time Picker Modal -->
+        <div id="time-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select Birth Time</h3>
+                    <button id="close-time-modal" class="close-button">×</button>
+                </div>
+                <div class="modal-body">
+                    <input type="time" id="time-picker" class="time-input">
+                </div>
+                <div class="modal-footer">
+                    <button id="confirm-time" class="confirm-button">OK</button>
+                    <button id="cancel-time" class="cancel-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

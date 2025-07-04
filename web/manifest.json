@@ -1,0 +1,27 @@
+{
+    "name": "Age Tracker",
+    "short_name": "AgeTracker",
+    "description": "Track your age in real-time with precision down to the second",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#667eea",
+    "theme_color": "#2196F3",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM2NjdlZWE7c3RvcC1vcGFjaXR5OjEiIC8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6Izc2NGJhMjtzdG9wLW9wYWNpdHk6MSIgLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8Y2lyY2xlIGN4PSI5NiIgY3k9Ijk2IiByPSI2NCIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iMyIgZmlsbD0iIzIxOTZGMiIvPgo8cGF0aCBkPSJNOTYgOTYgTDk2IDU0IEw5MiA1NCBMOTIgOTYgWiIgZmlsbD0iIzIxOTZGMiIvPgo8cGF0aCBkPSJNOTYgOTYgTDEyOCA5NiBMMTI4IDkyIEw5NiA5MiBaIiBmaWxsPSIjMjE5NkYyIi8+CjxwYXRoIGQ9Ik0xMjggODggTDEyOCAxMTIgTDEwOCAxMTIgTDEwOCA4OCBaIiBmaWxsPSIjRkY5ODAwIi8+CjxwYXRoIGQ9Ik0xMTIgOTIgTDEyMCA5MiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxIi8+CjxwYXRoIGQ9Ik0xMTIgOTYgTDEyMCA5NiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxIi8+CjxwYXRoIGQ9Ik0xMTIgMTAwIEwxMjAgMTAwIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEiLz4KPGNpcmNsZSBjeD0iNTQiIGN5PSI1NCIgcj0iNCIgZmlsbD0iI0U5MUU2MyIvPgo8Y2lyY2xlIGN4PSIxMzgiIGN5PSI1NCIgcj0iNCIgZmlsbD0iI0U5MUU2MyIvPgo8Y2lyY2xlIGN4PSI1NCIgY3k9IjEzOCIgcj0iNCIgZmlsbD0iI0U5MUU2MyIvPgo8Y2lyY2xlIGN4PSIxMzgiIGN5PSIxMzgiIHI9IjQiIGZpbGw9IiNFOTFFNjMiLz4KPC9zdmc+",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM2NjdlZWE7c3RvcC1vcGFjaXR5OjEiIC8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6Izc2NGJhMjtzdG9wLW9wYWNpdHk6MSIgLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE3MCIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI4IiBmaWxsPSIjMjE5NkYyIi8+CjxwYXRoIGQ9Ik0yNTYgMjU2IEwyNTYgMTQ0IEwyNDggMTQ0IEwyNDggMjU2IFoiIGZpbGw9IiMyMTk2RjIiLz4KPHBhdGggZD0iTTI1NiAyNTYgTDM0MiAyNTYgTDM0MiAyNDggTDI1NiAyNDggWiIgZmlsbD0iIzIxOTZGMiIvPgo8cGF0aCBkPSJNMzQyIDIzNCBMMzQyIDI5OCBMMjg4IDI5OCBMMjg4IDIzNCBaIiBmaWxsPSIjRkY5ODAwIi8+CjxwYXRoIGQ9Ik0yOTggMjQ2IEwzMjAgMjQ2IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTI5OCAyNTYgTDMyMCAyNTYiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNMjk4IDI2NiBMMzIwIDI2NiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjE0NCIgY3k9IjE0NCIgcj0iMTAiIGZpbGw9IiNFOTFFNjMiLz4KPGNpcmNsZSBjeD0iMzY4IGN5PSIxNDQiIHI9IjEwIiBmaWxsPSIjRTkxRTYzIi8+CjxjaXJjbGUgY3g9IjE0NCIgY3k9IjM2OCIgcj0iMTAiIGZpbGw9IiNFOTFFNjMiLz4KPGNpcmNsZSBjeD0iMzY4IGN5PSIzNjgiIHI9IjEwIiBmaWxsPSIjRTkxRTYzIi8+Cjwvc3ZnPg==",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["lifestyle", "utilities"],
+    "lang": "en",
+    "dir": "ltr"
+} 
